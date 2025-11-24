@@ -17,7 +17,7 @@ for (let i = 0; i < pronoun.length; i++) {
         }
     }
 }
-//2. Iteración con un solo array
+//1.1. Iteración con un solo array
 let completName = [pronoun, adj, noun]
 
 for (let i = 0; i < completName[0].length; i++) {
@@ -32,7 +32,7 @@ for (let i = 0; i < completName[0].length; i++) {
     }
 }
 
-//3. Iteración con varios dominios
+//2. Iteración con varios dominios
 let domain = ['.com', '.es', '.org', '.net', '.us', '.io']
 
 for (let i = 0; i < completName[0].length; i++) {
@@ -51,7 +51,7 @@ for (let i = 0; i < completName[0].length; i++) {
     }
 }
 
-//4. Ejercicio complementario "domain hacks"
+//3. Ejercicio complementario "domain hacks"
 let nameHackeable = ['juguetes', 'vacaiones', 'puedes', 'delicious', 'thelastofus', 'movies'];
 let acortado = '';
 
