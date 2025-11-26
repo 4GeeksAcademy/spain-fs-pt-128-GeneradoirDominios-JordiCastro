@@ -52,17 +52,20 @@ for (let i = 0; i < completName[0].length; i++) {
 }
 
 //3. Ejercicio complementario "domain hacks"
-let nameHackeable = ['juguetes', 'vacaiones', 'puedes', 'delicious', 'thelastofus', 'movies'];
+let nameHackeable = ['juguetes', 'vacaiones', 'puedes', 'delicious', 'thelastofus', 'movies', 'pera', 'alcachofa'];
 let acortado = '';
 
 for (let i = 0; i < nameHackeable.length; i++) {
     if (nameHackeable[i].includes('es')) {
         acortado = nameHackeable[i].slice(0, nameHackeable[i].length - 2)
-        //console.log(acortado + '.es');
+        console.log(acortado + '.es');
         
-    } else if (nameHackeable[i].includes('us')) {
+    } 
+    else if (nameHackeable[i].includes('us')) {
         acortado = nameHackeable[i].slice(0, nameHackeable[i].length - 2)
-        //console.log(acortado + '.us');
+        console.log(acortado + '.us');
     }
-    
+    else{
+    console.log(`La palabra '${nameHackeable[i]}' no puede ser hackeable con los dominios conocidos.`)
+    }
 }
